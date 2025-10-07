@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h2>Please Enter a number, and I will Square it</h2>
+    <input type="text" id="squareVar" placeholder="enter number">
+    <button onclick="square()">SQUARE</button>
+
+    <script>
+        function square()
+        {
+            var square = document.getElementById("squareVar").value;
+            alert("The square of " + square + " is " + square * square);
+        }
+      
+    </script>
+  </body>
+</html>
