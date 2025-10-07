@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body id="containerId">
+        <button id="backgroundBtn">Change Color</button>
+        <style>
+            .background {
+                background-color: aquamarine;
+            }
+        </style>
+        <script>
+            document.getElementById("backgroundBtn").addEventListener("click",
+            function() {
+                let bGround = document.getElementById("containerId");
+
+                bGround.classList.toggle("background");
+            });
+        </script>
+
+    </body>
+</html>
