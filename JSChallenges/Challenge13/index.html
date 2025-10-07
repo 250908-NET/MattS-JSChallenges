@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<body>
+    <p id="redText">
+    I AM RED
+    </p>
+    <button id="changeTextBtn">Make red and bold</button>
+    <button id="unchangeTextBtn">revert change</button>
+    <script>
+        function changeText() {
+            let text = document.getElementById("redText");
+            text.style.color = "red";
+            text.style.fontWeight = "bold";
+        }
+        function unchangeText() {
+            let text = document.getElementById("redText");
+            text.style.color = "";
+            text.style.fontWeight = "";
+        }
+
+        document.getElementById("changeTextBtn").addEventListener("click", changeText);
+        document.getElementById("unchangeTextBtn").addEventListener("click",unchangeText);
+
+
+
+        
+    </script>
+    
+</body>
